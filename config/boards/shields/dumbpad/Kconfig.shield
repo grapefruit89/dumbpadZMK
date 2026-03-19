@@ -1,2 +1,5 @@
 config SHIELD_DUMBPAD
     def_bool $(shields_list_contains,dumbpad)
+
+config SHIELD_DUMBPAD_OLED
+    def_bool $(shields_list_contains,dumbpad_oled)
