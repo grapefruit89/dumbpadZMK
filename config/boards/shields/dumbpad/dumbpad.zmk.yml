@@ -1,10 +1,10 @@
-file_format: 1
+file_format: "1"
 id: dumbpad
 name: Dumbpad
 type: shield
 url: https://github.com/imchipwood/dumbpad
-requires: [ "pro_micro" ]
-exposes: [ "pro_micro_i2c" ]
+requires:
+  - pro_micro
 features:
   - encoder
   - rgb_underglow
