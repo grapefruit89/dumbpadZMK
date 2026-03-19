@@ -55,6 +55,11 @@
     };
 };
 
+/* Deaktiviere Peripherie, die Pins belegen könnte */
+&i2c0 { status = "disabled"; };
+&spi0 { status = "disabled"; };
+&uart0 { status = "disabled"; };
+
 &blue_led {
     status = "disabled";
 };
