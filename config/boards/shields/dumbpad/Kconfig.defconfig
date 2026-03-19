@@ -1,9 +1,6 @@
 if SHIELD_DUMBPAD
 
 config ZMK_KEYBOARD_NAME
-    default "Dumbpad"
-
-config ZMK_SPLIT
-    default n
+    default "DUMB"
 
 endif # SHIELD_DUMBPAD
