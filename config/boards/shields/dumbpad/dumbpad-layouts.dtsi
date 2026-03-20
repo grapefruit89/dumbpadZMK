@@ -1,3 +1,5 @@
+#include <dt-bindings/zmk/physical_layouts.h>
+
 / {
     layouts {
         compatible = "zmk,physical-layouts";
