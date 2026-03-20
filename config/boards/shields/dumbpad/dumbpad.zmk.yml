@@ -10,3 +10,7 @@ features:
   - keys
   - backlight
   - rgb_underglow
+  - studio
+layouts:
+  - id: default_layout
+    display_name: Default Layout

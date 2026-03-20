@@ -6,6 +6,28 @@
             display-name = "Default Layout";
             transform = <&default_transform>;
             kscan = <&kscan0>;
+            keys  // Koordinaten für das ZMK Studio GUI (4x4 Grid + Encoder)
+                = <&key_physical 0 0 0 0 100 100> // RC(0,0)
+                , <&key_physical 1 0 100 0 100 100>
+                , <&key_physical 2 0 200 0 100 100>
+                , <&key_physical 3 0 300 0 100 100>
+                , <&key_physical 4 0 400 0 100 100> // Encoder-Button RC(0,4)
+                
+                , <&key_physical 5 1 0 100 100 100> // RC(1,0)
+                , <&key_physical 6 1 100 100 100 100>
+                , <&key_physical 7 1 200 100 100 100>
+                , <&key_physical 8 1 300 100 100 100>
+                
+                , <&key_physical 10 2 0 200 100 100> // RC(2,0)
+                , <&key_physical 11 2 100 200 100 100>
+                , <&key_physical 12 2 200 200 100 100>
+                , <&key_physical 13 2 300 200 100 100>
+                
+                , <&key_physical 15 3 0 300 100 100> // RC(3,0)
+                , <&key_physical 16 3 100 300 100 100>
+                , <&key_physical 17 3 200 300 100 100>
+                , <&key_physical 18 3 300 300 100 100>
+                ;
         };
     };
 };
