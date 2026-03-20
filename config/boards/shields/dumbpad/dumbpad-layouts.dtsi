@@ -1,4 +1,4 @@
-#include <dt-bindings/zmk/physical_layouts.h>
+#include <physical_layouts.dtsi>
 
 / {
     layouts {
@@ -8,27 +8,27 @@
             display-name = "Default Layout";
             transform = <&default_transform>;
             kscan = <&kscan0>;
-            keys  // Koordinaten für das ZMK Studio GUI (4x4 Grid + Encoder)
-                = <&key_physical 0 0 0 0 100 100> // RC(0,0)
-                , <&key_physical 1 0 100 0 100 100>
-                , <&key_physical 2 0 200 0 100 100>
-                , <&key_physical 3 0 300 0 100 100>
-                , <&key_physical 4 0 400 0 100 100> // Encoder-Button RC(0,4)
+            keys  // Koordinaten für ZMK Studio (Breite Höhe X Y Rot Spalte Zeile)
+                = <&key_physical_attrs 100 100 0 0 0 0 0>
+                , <&key_physical_attrs 100 100 100 0 0 1 0>
+                , <&key_physical_attrs 100 100 200 0 0 2 0>
+                , <&key_physical_attrs 100 100 300 0 0 3 0>
+                , <&key_physical_attrs 100 100 400 0 0 4 0> // Encoder-Button RC(0,4)
                 
-                , <&key_physical 5 1 0 100 100 100> // RC(1,0)
-                , <&key_physical 6 1 100 100 100 100>
-                , <&key_physical 7 1 200 100 100 100>
-                , <&key_physical 8 1 300 100 100 100>
+                , <&key_physical_attrs 100 100 0 100 0 0 1>
+                , <&key_physical_attrs 100 100 100 100 0 1 1>
+                , <&key_physical_attrs 100 100 200 100 0 2 1>
+                , <&key_physical_attrs 100 100 300 100 0 3 1>
                 
-                , <&key_physical 10 2 0 200 100 100> // RC(2,0)
-                , <&key_physical 11 2 100 200 100 100>
-                , <&key_physical 12 2 200 200 100 100>
-                , <&key_physical 13 2 300 200 100 100>
+                , <&key_physical_attrs 100 100 0 200 0 0 2>
+                , <&key_physical_attrs 100 100 100 200 0 1 2>
+                , <&key_physical_attrs 100 100 200 200 0 2 2>
+                , <&key_physical_attrs 100 100 300 200 0 3 2>
                 
-                , <&key_physical 15 3 0 300 100 100> // RC(3,0)
-                , <&key_physical 16 3 100 300 100 100>
-                , <&key_physical 17 3 200 300 100 100>
-                , <&key_physical 18 3 300 300 100 100>
+                , <&key_physical_attrs 100 100 0 300 0 0 3>
+                , <&key_physical_attrs 100 100 100 300 0 1 3>
+                , <&key_physical_attrs 100 100 200 300 0 2 3>
+                , <&key_physical_attrs 100 100 300 300 0 3 3>
                 ;
         };
     };
